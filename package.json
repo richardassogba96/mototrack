@@ -16,5 +16,3 @@
     "@expo/vector-icons": "^15.0.3",
     "expo-document-picker": "~14.0.8"
   },
-  "private": true
-}
