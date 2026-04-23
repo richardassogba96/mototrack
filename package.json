@@ -1,7 +1,7 @@
 {
   "license": "0BSD",
   "main": "index.js",
-  ""scripts": {
+  "scripts": {
   "dev": "next dev",
   "build": "next build",
   "start": "next start"
