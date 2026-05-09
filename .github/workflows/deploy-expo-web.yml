@@ -1,0 +1,36 @@
+name: Deploy Expo Web to expo.dev
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: npm install --legacy-peer-deps
+
+      - name: Install Expo & EAS
+        run: npm install -g expo-cli eas-cli
+
+      - name: Ensure Expo web dependencies
+        run: npx expo install react-dom react-native-web expo-router @expo/metro-runtime
+
+      - name: Export Expo Web
+        run: npx expo export --platform web
+
+      - name: Deploy to Expo
+        env:
+          EXPO_TOKEN: ${{ secrets.EXPO_TOKEN }}
+        run: eas deploy --non-interactive
