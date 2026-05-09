@@ -32,5 +32,5 @@ jobs:
 
       - name: Deploy to Expo
         env:
-          EXPO_TOKEN: ${{ secrets.EXPO_TOKEN }}
+          EXPO_TOKEN: ${{ secrets.mototrack }}
         run: eas deploy --non-interactive
