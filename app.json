@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "moto_track_web",
-    "slug": "mototrackweb",
+    "name": "MotoTrack",
+    "slug": "mototrack",
     "version": "1.0.0",
     "platforms": ["web"],
     "web": {
@@ -9,7 +9,7 @@
     },
     "extra": {
       "eas": {
-        "projectId": "7cc7712b-1496-4e9d-9048-c80ae2ad7af3"
+        "projectId": "25bfb3fa-81c5-4ac1-8986-093b0924deb8"
       }
     }
   }
