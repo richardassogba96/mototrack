@@ -7,12 +7,13 @@ import { getAuth } from "firebase/auth";
  * Configuration Firebase
  */
 const firebaseConfig = {
-  apiKey: "AIzaSyBrxMSW0cXl-2YbRYOdgAFnARMDj5TRNdU",
-  authDomain: "mototrackweb.firebaseapp.com",
-  projectId: "mototrackweb",
-  storageBucket: "mototrackweb.appspot.com",
-  messagingSenderId: "758361184331",
-  appId: "1:758361184331:web:1586d872d5e8d5979c95ce",
+  apiKey: "AIzaSyAQSG7KAndEVAK_ullNM7B4ohV6VoOPB3Q",
+  authDomain: "mototrack-a40ec.firebaseapp.com",
+  projectId: "mototrack-a40ec",
+  storageBucket: "mototrack-a40ec.firebasestorage.app",
+  messagingSenderId: "943332422322",
+  appId: "1:943332422322:web:d4243def49b3c93ec38fab",
+  measurementId: "G-WR8YVG4WTF"
 };
 
 /**
